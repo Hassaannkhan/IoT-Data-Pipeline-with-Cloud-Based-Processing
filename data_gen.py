@@ -5,10 +5,10 @@ import random
 from datetime import datetime
 import mysql.connector
 
-connection = "HostName=elecH.azure-devices.net;DeviceId=iotdevice;SharedAccessKey=TQ5shcqIv/LfrFaZeiyhLQK3dyzjasN46Hi1rPnB76w="
+connection = "Connection String"
 host='127.0.0.1'
-user='root'
-password='admin.'
+user=''
+password=''
 port = '3306'
 db = 'iotdevice1'
 
@@ -24,7 +24,7 @@ def main():
         #                 )
         # curr = conn.cursor() 
         # print("database connected")
-        # database_conn()
+        
         while True:
             consumer_id = random.randint(1001, 1010)
             timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
